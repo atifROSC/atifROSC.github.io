@@ -1,0 +1,81 @@
+/*
+
+COLOR PALETTE:
+#0B090A
+#161A1D
+#660708
+#A4161A
+#BA181B
+#E5383B
+#B1A7A6
+#D3D3D3
+#F5F3F4
+#FFFFFF
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  position: relative;
+  font-family: "Montserrat";
+  font-size: 62.5%;
+}
+
+header span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ba181b;
+}
+
+strong {
+  font-weight: 300;
+}
+
+main {
+  position: relative;
+  margin-top: 50rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 40rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  min-width: 700px;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.link-text:link,
+.link-text:visited {
+  font-size: 2.4rem;
+  color: #a4161a;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 0.5px solid transparent;
+  padding: 0 5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.link-text:hover,
+.link-text:active {
+  letter-spacing: 5px;
+  color: #e5383b;
+  border-bottom: 0.5px solid #e5383b;
+}
