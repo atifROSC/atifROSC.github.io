@@ -60,6 +60,9 @@ img {
   top: 32%;
   left: 50%;
   transform: translate(-50%, 0);
+  animation: text-load 1000ms ease-out 1000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .link-text:link,
@@ -79,3 +82,44 @@ img {
   color: #e5383b;
   border-bottom: 0.5px solid #e5383b;
 }
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: overlay;
+  margin: 1rem 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f5f3f49c;
+  border-radius: 8px;
+}
+
+.image-container {
+  animation: image-load 1000ms ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes text-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes image-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
