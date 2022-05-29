@@ -305,7 +305,7 @@ COLOR PALETTE:
 
 .modal.video-container {
   background-color: #660708;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .video {
