@@ -21,6 +21,26 @@ COLOR PALETTE:
 /* HERO SECTION */
 /**********************/
 
+.container {
+  animation: hero-load 750ms ease-out 1200ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.main-header {
+  animation: nav-load 1400ms 750ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-100%);
+}
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .section-hero {
   height: 130rem;
   padding: 35rem 0 20rem 0;
@@ -29,6 +49,9 @@ COLOR PALETTE:
   background-size: cover;
   background-position: center;
   color: #f5f3f4;
+  animation: hero-load 750ms ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .hero-info {
@@ -39,8 +62,20 @@ COLOR PALETTE:
   justify-content: space-between;
 }
 
+@keyframes hero-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero-text {
   width: 100%;
+  animation: hero-load 750ms ease-out 600ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .hero-text p {
@@ -67,6 +102,9 @@ COLOR PALETTE:
   display: grid;
   justify-content: center;
   gap: 1.4rem;
+  animation: hero-load 750ms ease-out 1200ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .btn-residents:link,
