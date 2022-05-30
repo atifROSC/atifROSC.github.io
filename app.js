@@ -34,6 +34,7 @@ const closeModal = () => {
   }
   overlay.classList.remove("visible");
   btnClose.classList.remove("visible");
+  body.style.overflowY = "scroll";
   body.style.overflow = "overlay";
 };
 
