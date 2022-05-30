@@ -34,8 +34,8 @@ const closeModal = () => {
   }
   overlay.classList.remove("visible");
   btnClose.classList.remove("visible");
-  body.style.overflowY = "scroll";
-  body.style.overflow = "overlay";
+//   body.style.overflowY = "scroll";
+  body.style.overflowY = "overlay";
 };
 
 overlay.addEventListener("click", closeModal);
