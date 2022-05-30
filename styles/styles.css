@@ -170,7 +170,6 @@ COLOR PALETTE:
 /**********************/
 /* FEATURED VIDEO SECTION */
 /**********************/
-
 .section-latest-procedures {
   color: #f5f3f4;
   text-align: center;
@@ -190,19 +189,13 @@ COLOR PALETTE:
 .procedure-video-card {
   display: inline-block;
   color: #f5f3f4;
-}
-
-.featured-video a:link,
-.featured-video a:visited {
   background-color: #d3d3d35a;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
   transition: all 0.2s;
 }
-
-.featured-video a:hover,
-.featured-video a:active {
+.procedure-video-card:hover {
   transform: scale(1.02);
   box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
