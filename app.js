@@ -21,11 +21,19 @@ const overlay = document.querySelector(".overlay");
 const btnClose = document.querySelector(".close-icon");
 const body = document.querySelector("body");
 const allModals = document.querySelectorAll(".modal");
+const video = document.querySelectorAll(".video");
 
 const openModal = () => {
   overlay.classList.add("visible");
   btnClose.classList.add("visible");
   body.style.overflow = "hidden";
+};
+
+const stopVideo = () => {
+  for (let vid of video) {
+    vid.pause();
+    vid.currentTime = 0;
+  }
 };
 
 const closeModal = () => {
@@ -36,6 +44,7 @@ const closeModal = () => {
   btnClose.classList.remove("visible");
   body.style.overflowY = "scroll";
   body.style.overflow = "overlay";
+  stopVideo();
 };
 
 overlay.addEventListener("click", closeModal);
