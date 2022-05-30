@@ -129,7 +129,8 @@ strong {
 
 .main-header {
   display: flex;
-  position: fixed;
+  position: absolute;
+  z-index: 1;
   align-items: center;
   justify-content: space-between;
   height: 60px;
