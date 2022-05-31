@@ -60,13 +60,12 @@ img {
   top: 32%;
   left: 50%;
   transform: translate(-50%, 0);
-  animation: text-load 1000ms ease-out 1000ms;
+  animation: text-load 700ms ease-out 500ms;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
-.link-text:link,
-.link-text:visited {
+.link-text {
   font-size: 2.4rem;
   color: #a4161a;
   font-weight: 500;
@@ -76,11 +75,11 @@ img {
   transition: all 0.5s ease-in-out;
 }
 
-.link-text:hover,
-.link-text:active {
+.link-text:hover {
   letter-spacing: 5px;
   color: #e5383b;
   border-bottom: 0.5px solid #e5383b;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -100,7 +99,7 @@ img {
 }
 
 .image-container {
-  animation: image-load 1000ms ease-out;
+  animation: image-load 700ms ease-out;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -123,3 +122,79 @@ img {
   }
 }
 
+.form-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  color: #fff;
+  width: 500px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.form-box {
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 250ms;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+#password {
+  border: none;
+  height: 4rem;
+  border-bottom: 1px solid #dd8c8d;
+  padding: 0 4rem;
+  background: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+::placeholder {
+  color: #f5f3f4c7;
+  letter-spacing: 0.8px;
+}
+
+#password:focus {
+  outline: none;
+  border-bottom: 2px solid #edd0d1;
+}
+
+.btn {
+  font-size: 1.6rem;
+  border: 2px solid #f5f3f4;
+  background: none;
+  color: #f5f3f4;
+  padding: 0.3rem 2rem;
+  transition: all 0.3s;
+  width: 30%;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: #a4161a;
+  border: 2px solid #a4161a;
+  cursor: pointer;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
