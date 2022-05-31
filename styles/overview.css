@@ -21,6 +21,7 @@ COLOR PALETTE:
 */
 
 body {
+  position: relative;
   font-family: "Roboto", sans-serif;
 }
 
@@ -42,10 +43,10 @@ body {
 .section-overview-hero {
   background-image: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.01)
     ),
-    url(/img/overview/istockphoto-1171914936-1024x1024.jpg);
+    url(/img/overview/helipad-rutgers-sign.jpg);
   height: 75rem;
   background-size: cover;
   color: #edd0d1;
@@ -395,3 +396,48 @@ body {
   border-bottom: 1px solid #dd8c8d;
 }
 
+/*************************/
+/* MODAL ADDITIONAL INFO */
+/*************************/
+
+.about-us-modal {
+  position: fixed;
+  z-index: 1000;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120rem;
+  /* height: 80rem; */
+  background-color: rgba(51, 51, 51, 0.75);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trauma-modal-text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem;
+  height: 60rem;
+  justify-content: space-around;
+}
+
+.trauma-modal-text {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1.6;
+  letter-spacing: 1.1px;
+  font-weight: 300;
+}
+
+.trauma-modal-img {
+  width: 40%;
+  height: 60rem;
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+
+.about-us-overlay {
+  background-color: rgba(164, 22, 27, 0.1);
+}

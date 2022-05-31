@@ -1,4 +1,3 @@
-
 `use strict`;
 
 const btnTrauma = document.querySelector(`.trauma-info-card`);

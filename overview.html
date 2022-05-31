@@ -34,7 +34,8 @@
     />
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/overview.css" />
-    <script src="/overview.js" type="module" defer></script>
+    <script src="/general.js" defer></script>
+    <script src="/overview.js" defer></script>
     <title>About UH</title>
   </head>
   <body>
@@ -116,7 +117,7 @@
             class="info-img"
           />
         </div>
-        <div class="info-card">
+        <div class="info-card trauma-info-card">
           <img
             src="/img/overview/ruben-hanssen-3NrjJFYQhlA-unsplash.jpg"
             alt=""
@@ -227,6 +228,35 @@
         </div>
       </section>
     </main>
+    <aside class="modal-more-info">
+      <div>
+        <ion-icon name="close-outline" class="close-icon hidden"></ion-icon>
+      </div>
+      <div class="about-us-modal trauma-center-modal hidden">
+        <div class="trauma-modal-text-container">
+          <p class="trauma-modal-text">
+            As the only Level 1 Trauma Center in Northern New Jersey, we provide
+            cutting edge trauma care. The ED manages trauma cases independently
+            or in conjuction with the Trauma Surgery team for the more serious
+            cases. There are 4 Trauma Bays as well as a shock-trauma room that
+            may be used as an operating room.
+          </p>
+          <p class="trauma-modal-text">
+            Each bay is fully equipped for complete trauma resuscitations
+            including radiology-friendly stretchers. Designated plain film
+            radiology and a ct scanner attached to the area provides quick and
+            efficient radiological studies.
+          </p>
+        </div>
+        <img
+          src="/img/overview/trauma-placeholder.jpg"
+          alt=""
+          class="trauma-modal-img"
+        />
+      </div>
+      <div class="overlay about-us-overlay hidden"></div>
+    </aside>
+
     <footer>
       <ul class="footer-icon-list">
         <li>

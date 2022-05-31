@@ -1,6 +1,8 @@
 "use strict";
 
+//////////////
 // PARALLAX //
+//////////////
 
 const parallax1 = document.querySelector(`.section-hero`);
 const parallax2 = document.querySelector(".parallax-bg span");
