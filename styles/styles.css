@@ -43,11 +43,12 @@ COLOR PALETTE:
 
 .section-hero {
   height: 130rem;
-  padding: 95rem 0 20rem 0;
+  padding: 35rem 0 20rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.7)),
     url(/uh-site-pics/ER-isometric.jpg);
   background-size: cover;
   background-position: center;
+  background-position-y: 6rem;
   color: #f5f3f4;
   animation: hero-load 750ms ease-out;
   animation-fill-mode: forwards;
