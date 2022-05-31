@@ -1,8 +1,6 @@
 /*
-
 FONT SIZE:
  8 / 12 / 16 / 24 / 32 / 48 / 64 / 72 / 80 / 96
-
 COLOR PALETTE:
 #0B090A
 #161A1D
@@ -14,7 +12,6 @@ COLOR PALETTE:
 #D3D3D3
 #F5F3F4
 #FFFFFF
-
 */
 
 /**********************/
@@ -48,7 +45,6 @@ COLOR PALETTE:
     url(/uh-site-pics/ER-isometric.jpg);
   background-size: cover;
   background-position: center;
-  background-position-y: 6rem;
   color: #f5f3f4;
   animation: hero-load 750ms ease-out;
   animation-fill-mode: forwards;
@@ -171,6 +167,7 @@ COLOR PALETTE:
 /**********************/
 /* FEATURED VIDEO SECTION */
 /**********************/
+
 .section-latest-procedures {
   color: #f5f3f4;
   text-align: center;
