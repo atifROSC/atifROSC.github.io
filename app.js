@@ -76,7 +76,7 @@ const openAccessVideoHandler = () => {
 
 btnPacerVideo.addEventListener("click", openPacerVideoHandler);
 btnBoxVideo.addEventListener("click", openBoxVideoHandler);
-btnAccessVideo.addEventListener("click", openBoxVideoHandler);
+btnAccessVideo.addEventListener("click", openAccessVideoHandler);
 
 //////////////////////
 // GUIDELINE MODALS //
