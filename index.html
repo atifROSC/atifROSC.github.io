@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/landing.css" />
+    <link rel="stylesheet" href="/styles/landing.css" />
     <script src="/landing.js" defer></script>
     <title>Welcome to BrickCityEM</title>
   </head>
@@ -22,11 +22,27 @@
       </div>
       <div class="link-container">
         <h2 class="enter-link">
-          <a href="/main.html" class="link-text"
-            >Click to <strong>ENTER</strong> BrickCityEM</a
-          >
+          <p class="link-text">Click to <strong>ENTER</strong> BrickCityEM</p>
         </h2>
       </div>
+      <aside>
+        <div class="form-box">
+          <form class="password-form">
+            <input
+              id="password"
+              type="password"
+              placeholder="Please Enter Password"
+            />
+            <a
+              class="btn"
+              onclick="javascript:return enterSiteHandler()"
+              href="/main.html"
+            >
+              Enter
+            </a>
+          </form>
+        </div>
+      </aside>
     </main>
   </body>
 </html>
